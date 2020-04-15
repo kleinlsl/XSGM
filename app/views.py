@@ -11,6 +11,14 @@ from django.views import View
 from app.models import User, Grade, Message,Course
 
 
+class IndexView(View):
+    def get(self,request,*args,**kwargs):
+
+
+        return render(request, 'index.html',{
+
+        })
+
 class UserView(View):
     # def dispatch(self, request, *args, **kwargs):  # 反射调用 类中的方法     其实和上面的写法一样
     #     # 调用父类中的dispatch

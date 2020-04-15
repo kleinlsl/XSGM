@@ -19,11 +19,11 @@ from django.urls import path, include
 from django.views.static import serve
 
 from XSGM.settings import STATIC_ROOT
-from app.views import UserView,GradeView,MessageView,CourseView
+from app.views import UserView, GradeView, MessageView, CourseView, IndexView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    # path('',UserView.as_view(),name="index"),
+    path('', IndexView.as_view(), name="index"),
     path('user/', UserView.as_view(), name="user"),
     path('grade/',GradeView.as_view(),name='grade'),
     path('message/',MessageView.as_view(),name="message"),
