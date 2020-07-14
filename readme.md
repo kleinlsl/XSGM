@@ -39,7 +39,12 @@ D:.
 ├─app	   //django应用app
 │  ├─migrations
 │  │  └─__pycache__
-│  └─__pycache__
+│  ├─__init__.py
+│  ├─admin.py   //后台界面展示配置
+│  ├─apps.py    
+│  ├─models.py  //定义数据库模型：ORM关系对象模型映射
+│  ├─tests.py   //编写当前app单元测试
+│  └─views.py   //view视图事务处理，接收http请求处理
 ├─config	//存放照片
 │  └─user
 │      └─2019
@@ -66,12 +71,17 @@ D:.
 │  ├─Include
 │  ├─Lib
 │  └─。。。。。
-├─XSGM    //Django 路由
+├─XSGM    //Django
 │  └─__pycache__
-│  ├─db.sqlite3  //sqlite3数据库文件
-│  ├─manage.py  
-│  ├─readme.md
-└─ └─requirements.txt   //依赖库
+│  ├─__init__.py
+│  ├─asgi.py    
+│  ├─settings.py  //Django配置文件
+│  ├─urls.py    //路由映射
+│  └─wsgi.py
+├─db.sqlite3  //sqlite3数据库文件
+├─manage.py  
+├─readme.md
+└─requirements.txt   //依赖库
 
 ```
 
