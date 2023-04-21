@@ -6,4 +6,4 @@ django-simple-captcha==0.5.12
 Pillow==6.2.2
 pytz==2019.3
 six==1.13.0
-sqlparse==0.3.0
+sqlparse==0.4.4
